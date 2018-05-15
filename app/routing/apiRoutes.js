@@ -8,8 +8,8 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         var bestMatch = {
-            name = "",
-            photo = "",
+            name: "",
+            photo: "",
             friendDifference: 1000
         };
         console.log(req.body);
