@@ -183,7 +183,7 @@
                     <img id ="matchImg" src= "https://media.licdn.com/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
                 </div>
                 <div class ="modal-footer">
-                        <button type="button" class="btn btn-deafult" data-dismiss="modal">CLose</button>
+                        <button type="button" class="btn btn-deafult" data-dismiss="modal">Close</button>
 
                 </div>
             </div>
@@ -225,7 +225,7 @@ $("#submit").on("click", function() {
         var currentURL= window.location.origin;
         $.post(currentURL + "/api/friends", userData, function(data) {
             $("#matchName").text(data.name);
-            $("#matcImg").attr("src",data.photo);
+            $("#matchImg").attr("src",data.photo);
 
             $("#resultsModal").modal("toggle");
             // alert("working");
